@@ -12,6 +12,7 @@ Check [requirements.txt](requirements.txt) for installation instructions. Simila
 The RPC dataset can be download by these two urls:   
     https://www.kaggle.com/diyer22/retail-product-checkout-dataset  
     https://pan.baidu.com/s/1vrrLaSpJe5JxT3zhYfOaog 
+
 Besides, you can use the method of [DPSNet](https://github.com/jianzhnie/DPSNet/tree/master/dpsnet) to generate synthesized images.
 
 ## Necessary modifications
