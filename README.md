@@ -1,6 +1,6 @@
 # DEGNet: Decoupled Edge Guidance Network for Automatic Check-out
 
-This repository implements DEGNet on the base of **Pytorch**. The implementation is heavily influenced by the [project](https://github.com/WZMIAOMIAO/deep-learning-for-image-processing/tree/master/pytorch_object_detection/faster_rcnn), and the implementation code of our **Cascade RCNN** framework references **<a href="https://github.com/open-mmlab/mmdetection/tree/3.x" target="_blank">MMDetection</a>**.
+This repository implements DEGNet on the base of **Pytorch**. The implementation is heavily influenced by the project [deep-learning-for-image-processing](https://github.com/WZMIAOMIAO/deep-learning-for-image-processing/tree/master/pytorch_object_detection/faster_rcnn), and the implementation code of our **Cascade RCNN** framework references **<a href="https://github.com/open-mmlab/mmdetection/tree/3.x" target="_blank">MMDetection</a>**.
 
 
 ## Installation
