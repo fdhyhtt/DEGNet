@@ -1,0 +1,32 @@
+Global:
+  output_dir: '/gemini/ffm_synins_da'
+
+Dataset:
+  workers: 4
+  train_list: None
+  train_s: ("rpc_train_syn",)
+  train_t: ("rpc_instance",)
+  val_list: ('rpc_2019_test',)
+  batch_size: 8
+  aspect_ratio_factor: -1
+  iteration:
+    num_iters: 50000
+Model:
+  Backbone:
+    backbone1: 'ffm'
+    backbone2: 'ffm'
+  model:
+    da: True
+    pds: False
+    anchor_sizes: ((64, 128, 256,), (64, 128, 256,),)
+
+opt_param:
+  lr: 0.01
+  momentum: 0.9
+  weight_decay: 0.0001
+
+Lr_param:
+  use_epoch: False
+  lr_steps: (33000, 45000)
+  lr_gamma: 0.1
+

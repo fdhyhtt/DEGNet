@@ -1,0 +1,35 @@
+Global:
+  output_dir: '/gemini/fpn_ins'
+
+Dataset:
+  workers: 4
+#  train_list: None
+  train_list: ("rpc_instance",)
+  train_s: None
+  train_t: None
+  val_list: ('rpc_2019_test',)
+  batch_size: 8
+  aspect_ratio_factor: -1
+#  iteration:
+#    num_iters: 50000
+
+Model:
+  Backbone:
+    backbone1: 'fpn'
+    backbone2: None
+  model:
+    da: False
+    pds: False
+    anchor_sizes: ((32,), (64,), (128,), (256,), (512,),)
+  Roi: 'cascade'
+
+opt_param:
+  lr: 0.01
+  momentum: 0.9
+  weight_decay: 0.0001
+
+Lr_param:
+  use_epoch: True
+  lr_steps: (24, 33)
+  lr_gamma: 0.1
+
